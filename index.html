@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html id="thehead" lang="en">
+<html lang="en">
 	<head id="thehead">
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="index.js"></script>
+		<script src="datatypes.js"></script>
 		<title>Document</title>
 	</head>
 	<body>
@@ -12,11 +13,12 @@
 
 		<input type="button" value="change" onclick="changeBackground()" />
 		<input type="button" id="bangbutton" value="bang" onclick="buttonClick()" />
+		<input type="button" id="consolbutton" value="See the console -->" onclick="consoleLogDatatypes()" />
 
 		<script>
 			function buttonClick() {
 				console.log('I have clicked the button');
-				document.getElementById('thehead').value = 'BANG!';
+				document.body.innerHTML = 'BANG! The body is erased!';
 			}
 		</script>
 	</body>
